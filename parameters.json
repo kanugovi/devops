@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "vmName": {
+            "value": "soa-prod-db"
+        },
+        "adminUsername": {
+            "value": "kanugovi"
+        },
+        "WindowsPassword": {
+            "value": null
+        },
+        "vmSize": {
+            "value": "Standard_D2_v2"
+        },
+        "storageNewOrExisting": {
+            "value": "new"
+        },
+        "storageAccountName": {
+            "value": "soaproddbc371900fbd"
+        },
+        "storageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "storageAccountResourceGroupName": {
+            "value": "prod-rg"
+        },
+        "virtualNetworkNewOrExisting": {
+            "value": "new"
+        },
+        "virtualNetworkName": {
+            "value": "ProdNet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.1.0.0/16"
+            ]
+        },
+        "subnetName": {
+            "value": "Subnet-1"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "prod-rg"
+        },
+        "publicIpNewOrExisting": {
+            "value": "new"
+        },
+        "publicIpDns": {
+            "value": "soa-prod-db-2b43dd5121"
+        },
+        "publicIpName": {
+            "value": "soa-prod-db-ip"
+        },
+        "publicIpResourceGroupName": {
+            "value": "prod-rg"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        }
+    }
+}
